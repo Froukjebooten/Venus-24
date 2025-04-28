@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Communication Flowchart" id="communication-flowchart">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Robot A PYNQ Block -->
+        <mxCell id="2" value="Robot A (PYNQ)" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Robot A ESP32 Block -->
+        <mxCell id="3" value="Robot A (ESP32)" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Robot B PYNQ Block -->
+        <mxCell id="4" value="Robot B (PYNQ)" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Robot B ESP32 Block -->
+        <mxCell id="5" value="Robot B (ESP32)" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="400" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- PC Broker Block -->
+        <mxCell id="6" value="PC (MQTT Broker)" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="250" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- UART Arrow Robot A PYNQ -> ESP32 -->
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- UART Arrow Robot B PYNQ -> ESP32 -->
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- MQTT Arrow ESP32 Robot A -> PC -->
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- MQTT Arrow ESP32 Robot B -> PC -->
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- UART Step: 4-Byte Header -->
+        <mxCell id="11" value="UART: Send 4-byte Length Header + Payload" style="shape=note;fillColor=#ffffff;strokeColor=#000000;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="60" width="200" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- MQTT Step -->
+        <mxCell id="12" value="MQTT: Publish to /recv and /send Topics" style="shape=note;fillColor=#ffffff;strokeColor=#000000;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="200" width="200" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Backflow PC -> Robot A ESP32 -->
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="6" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Backflow PC -> Robot B ESP32 -->
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
