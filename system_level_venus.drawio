@@ -79,22 +79,28 @@
         <mxCell id="3J5NSwPo6PcONXlhpp2i-17" value="Robot encountered element?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="300" y="400" width="100" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="3J5NSwPo6PcONXlhpp2i-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3J5NSwPo6PcONXlhpp2i-20" target="3J5NSwPo6PcONXlhpp2i-28">
+        <mxCell id="3J5NSwPo6PcONXlhpp2i-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3J5NSwPo6PcONXlhpp2i-20" target="3J5NSwPo6PcONXlhpp2i-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3J5NSwPo6PcONXlhpp2i-20" value="Robot detects element&lt;br&gt;sends information to&amp;nbsp;satellite&lt;br&gt;stops" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="80" y="405" width="130" height="70" as="geometry" />
+        <mxCell id="3J5NSwPo6PcONXlhpp2i-20" value="Robot detects element and stops" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="100" y="417.5" width="90" height="45" as="geometry" />
         </mxCell>
         <mxCell id="3J5NSwPo6PcONXlhpp2i-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3J5NSwPo6PcONXlhpp2i-28" target="WIyWlLk6GJQsqaUBKTNV-6">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="145" y="320" />
-              <mxPoint x="195" y="320" />
+              <mxPoint x="145" y="250" />
+              <mxPoint x="195" y="250" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="3J5NSwPo6PcONXlhpp2i-28" value="Satellite updates map" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="90" y="330" width="110" height="40" as="geometry" />
+          <mxGeometry x="90" y="270" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3J5NSwPo6PcONXlhpp2i-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3J5NSwPo6PcONXlhpp2i-33" target="3J5NSwPo6PcONXlhpp2i-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3J5NSwPo6PcONXlhpp2i-33" value="Robot sends detection to satellite" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="340" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
