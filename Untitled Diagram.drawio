@@ -1,115 +1,240 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="26.2.14" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="766" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1689" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="vleZaPMKjbEpvkwjxqv--9" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Received by broker&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="278" y="440" width="120" height="40" as="geometry" />
+        <mxCell id="SXNVDAQROYpI_iLePEsc-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--9" target="vleZaPMKjbEpvkwjxqv--20">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--10" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--12" target="vleZaPMKjbEpvkwjxqv--13">
+        <mxCell id="vleZaPMKjbEpvkwjxqv--9" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Received by broker&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="279" y="450" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--10" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--12" target="vleZaPMKjbEpvkwjxqv--13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="338" y="115" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--11" value="Robots land" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="vleZaPMKjbEpvkwjxqv--11" value="Robots land" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="278" y="20" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--12" value="UART &amp;amp; MQTT initialization" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="vleZaPMKjbEpvkwjxqv--12" value="UART &amp;amp; MQTT initialization" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="293" y="70" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--13" value="Data retrieved for example by sensors" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="SXNVDAQROYpI_iLePEsc-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--13" target="vleZaPMKjbEpvkwjxqv--21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--13" value="Data retrieved for example by sensors" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="278" y="130" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--16" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.007;exitY=0.551;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--13">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="237.78" y="201" as="targetPoint" />
-            <mxPoint x="328" y="180" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="238" y="152" />
-              <mxPoint x="238" y="180" />
-            </Array>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--19" target="SXNVDAQROYpI_iLePEsc-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--19" value="ESP32&amp;nbsp; subscribed to channel via MQTT and receives the payload with \receive" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="570" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--20" target="vleZaPMKjbEpvkwjxqv--30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--20" value="Store data&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="279" y="520" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--21" target="SXNVDAQROYpI_iLePEsc-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--21" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;PYNQ reads the data through GPIO/I2C/SPI.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="120" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--22" target="SXNVDAQROYpI_iLePEsc-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--22" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;PYNQ reads the data through its GPIO pins or I2C/SPI interfaces&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="440" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--23" value="Robot A" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="190" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--24" value="Robot B" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="420" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--25" target="vleZaPMKjbEpvkwjxqv--29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-42" value="UART" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SXNVDAQROYpI_iLePEsc-35">
+          <mxGeometry x="-0.437" y="-1" relative="1" as="geometry">
+            <mxPoint x="-28" y="6" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--18" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--13">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="438" y="200" as="targetPoint" />
-            <mxPoint x="479.22" y="151" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="438" y="150" />
-            </Array>
+        <mxCell id="vleZaPMKjbEpvkwjxqv--25" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;&quot; data-end=&quot;535&quot; data-start=&quot;487&quot;&gt;PYNQ sends the payload to the ESP32&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="119" y="370" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--26" target="vleZaPMKjbEpvkwjxqv--28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-10" value="UART&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SXNVDAQROYpI_iLePEsc-8">
+          <mxGeometry x="0.2167" y="-1" relative="1" as="geometry">
+            <mxPoint x="25" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--19" value="ESP32 subscribes to channel via MQTT and receives the payload" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="50" y="700" width="120" height="40" as="geometry" />
+        <mxCell id="vleZaPMKjbEpvkwjxqv--26" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;&quot; data-end=&quot;535&quot; data-start=&quot;487&quot;&gt;PYNQ sends the payload&amp;nbsp; to the ESP32&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="440" y="370" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--20" value="Store data&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="278" y="510" width="120" height="40" as="geometry" />
+        <mxCell id="SXNVDAQROYpI_iLePEsc-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--28" target="vleZaPMKjbEpvkwjxqv--9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="459.66666666666674" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--21" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;PYNQ reads the data through its GPIO pins or I2C/SPI interfaces.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="163" y="200" width="120" height="40" as="geometry" />
+        <mxCell id="vleZaPMKjbEpvkwjxqv--28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ESP32 publishes payload via MQTT to broker (/send topic)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="440" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--22" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;PYNQ reads the data through its GPIO pins or I2C/SPI interfaces&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="403" y="200" width="120" height="40" as="geometry" />
+        <mxCell id="SXNVDAQROYpI_iLePEsc-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--29" target="vleZaPMKjbEpvkwjxqv--9">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--23" value="Robot A" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="158" y="150" width="60" height="30" as="geometry" />
+        <mxCell id="vleZaPMKjbEpvkwjxqv--29" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ESP32 publishes payload via MQTT to broker (/send topic)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="119" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--24" value="Robot B" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="458" y="150" width="60" height="30" as="geometry" />
+        <mxCell id="SXNVDAQROYpI_iLePEsc-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="vleZaPMKjbEpvkwjxqv--19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="382.9999999999998" y="629.9999999999999" as="sourcePoint" />
+            <mxPoint x="530" y="631" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--25" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;&quot; data-end=&quot;535&quot; data-start=&quot;487&quot;&gt;PYNQ sends the payload via UART to the ESP32&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="163" y="280" width="120" height="40" as="geometry" />
+        <mxCell id="SXNVDAQROYpI_iLePEsc-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="338" y="740" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--26" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;&quot; data-end=&quot;535&quot; data-start=&quot;487&quot;&gt;PYNQ sends the payload via UART to the ESP32&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="401" y="280" width="120" height="40" as="geometry" />
+        <mxCell id="SXNVDAQROYpI_iLePEsc-15" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SXNVDAQROYpI_iLePEsc-12">
+          <mxGeometry x="0.0374" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ESP32 publishes the payload via MQTT to the broker (PC) using \send&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="401" y="360" width="120" height="40" as="geometry" />
+        <mxCell id="SXNVDAQROYpI_iLePEsc-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--30" target="SXNVDAQROYpI_iLePEsc-46">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--29" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ESP32 publishes the payload via MQTT to the broker (PC) using \send&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="163" y="360" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--30" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Does it have to be send to other robot.&amp;nbsp;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="vleZaPMKjbEpvkwjxqv--30" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Does it have to be send to other robot.&amp;nbsp;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="288" y="585" width="100" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--31" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--30">
+        <mxCell id="SXNVDAQROYpI_iLePEsc-0" value="Robot A" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="18" y="670" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SXNVDAQROYpI_iLePEsc-4" target="vleZaPMKjbEpvkwjxqv--22">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="700" as="targetPoint" />
-            <mxPoint x="141.22" y="651" as="sourcePoint" />
+            <mxPoint x="610" y="190" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="100" y="630" />
+              <mxPoint x="630" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--32" value="Yes, data from B" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vleZaPMKjbEpvkwjxqv--31">
-          <mxGeometry x="-0.2482" y="3" relative="1" as="geometry">
-            <mxPoint x="-6" y="-17" as="offset" />
+        <mxCell id="SXNVDAQROYpI_iLePEsc-16" value="UART" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SXNVDAQROYpI_iLePEsc-11">
+          <mxGeometry x="-0.268" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--33" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="SXNVDAQROYpI_iLePEsc-4" value="ESP32 sends the payload to the PYNQ" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="570" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.459;entryY=0.026;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vleZaPMKjbEpvkwjxqv--13" target="vleZaPMKjbEpvkwjxqv--22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-7" value="Yes, data from B" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240.00000000000006" y="619" as="geometry">
+            <mxPoint x="-1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-13" value="Data fully analyzed" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="281" y="740" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SXNVDAQROYpI_iLePEsc-17" target="SXNVDAQROYpI_iLePEsc-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-40" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SXNVDAQROYpI_iLePEsc-26">
+          <mxGeometry x="-0.1817" y="-3" relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SXNVDAQROYpI_iLePEsc-17" target="vleZaPMKjbEpvkwjxqv--25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-43" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SXNVDAQROYpI_iLePEsc-34">
+          <mxGeometry x="-0.4302" y="-1" relative="1" as="geometry">
+            <mxPoint x="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-17" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Is immediate action required?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="130" y="260" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SXNVDAQROYpI_iLePEsc-25" target="vleZaPMKjbEpvkwjxqv--25">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="240" y="710" as="targetPoint" />
-            <mxPoint x="240" y="630" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="240" y="640" />
+              <mxPoint x="320" y="325" />
+              <mxPoint x="320" y="390" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--35" value="Yes, data from A&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vleZaPMKjbEpvkwjxqv--33">
-          <mxGeometry x="0.0315" y="-2" relative="1" as="geometry">
-            <mxPoint x="50" y="19" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vleZaPMKjbEpvkwjxqv--37" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="SXNVDAQROYpI_iLePEsc-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SXNVDAQROYpI_iLePEsc-25">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="780" as="targetPoint" />
-            <mxPoint x="100" y="740" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="100" y="750" />
+              <mxPoint x="360" y="325" />
+              <mxPoint x="360" y="390" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-25" value="PYNQ commands drivers on the robot" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="279" y="285" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SXNVDAQROYpI_iLePEsc-29" target="SXNVDAQROYpI_iLePEsc-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SXNVDAQROYpI_iLePEsc-29" target="vleZaPMKjbEpvkwjxqv--26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-44" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SXNVDAQROYpI_iLePEsc-33">
+          <mxGeometry x="0.3615" y="-1" relative="1" as="geometry">
+            <mxPoint x="20" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-29" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Is immediate action required?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="260" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-41" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="320" as="geometry">
+            <mxPoint x="214" y="-30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SXNVDAQROYpI_iLePEsc-46" target="SXNVDAQROYpI_iLePEsc-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-46" value="ESP32&amp;nbsp; subscribed to channel via MQTT and receives the payload with \receive" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-10" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="vleZaPMKjbEpvkwjxqv--21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="220" as="targetPoint" />
+            <mxPoint x="49" y="500" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="49" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-48" value="UART" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SXNVDAQROYpI_iLePEsc-47">
+          <mxGeometry x="-0.268" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-49" value="ESP32 sends the payload to the PYNQ" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-10" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-52" value="Yes, data from A" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="440.00000000000006" y="619" as="geometry">
+            <mxPoint x="-1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXNVDAQROYpI_iLePEsc-53" value="Robot B" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="670" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
