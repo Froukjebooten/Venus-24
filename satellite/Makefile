@@ -1,8 +1,9 @@
 CC = gcc
 CXX = g++
-CFLAGS = -Wall -Wextra -I. ${NIX_CFLAGS_COMPILE}
-CXXFLAGS = -Wall -Wextra -I. ${NIX_CFLAGS_COMPILE} -std=c++11
-TEST_LDFLAGS = -lgtest -lgtest_main -pthread ${NIX_LDFLAGS}
+CFLAGS = -Wall -Wextra -I.
+CXXFLAGS = -Wall -Wextra -I. -std=c++14
+TEST_CFLAGS += $(CFLAGS)
+TEST_LDFLAGS += -lgtest -lgtest_main -pthread
 
 SRCS = main.c map.c robot_events.c
 OBJS = $(addprefix Compiledir/,$(SRCS:.c=.o))
