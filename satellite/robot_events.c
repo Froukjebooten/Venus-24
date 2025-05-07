@@ -3,7 +3,7 @@
 
 
 RobotEvent parse_robot_event(TransmittedRobotEvent* data, size_t num_bits) {
-    // TODO: panic
+    // TODO: panic if invalid event date
     RobotEvent e;
     if(num_bits >= 1) {
         // assume 1-to-1

@@ -10,6 +10,10 @@ typedef enum {
     DiscoveredBlock  = 1
 } EventType;
 
+typedef struct {
+    size_t initial_row;
+    size_t initial_column;
+} LineInformation;
 
 typedef struct {
   EventType type;
@@ -17,6 +21,7 @@ typedef struct {
   size_t column;
   union {
     BlockInformation block;
+    LineInformation line;
   } data;
 } RobotEvent;
 
