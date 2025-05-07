@@ -1,7 +1,7 @@
 #include "map.h"
 #include <assert.h>
 #include <stddef.h>
-
+#include <sys/param.h>
 void init_map(Map *map) {
   for (size_t c = 0; c < MAX_COLS; c++) {
     for (size_t r = 0; r < MAX_ROWS; r++) {
@@ -28,8 +28,8 @@ void handle_robot_event(Map *map, RobotEvent *event) {
            event->data.line.initial_row == event->row);
 
     // record the line in the map
-    for (size_t c = event->data.line.initial_column; c <= event->column; c++) {
-      for (size_t r = event->data.line.initial_row; r <= event->row; r++) {
+    for (size_t c = MIN(event->data.line.initial_column, event->column); c <= MAX(event->data.line.initial_column, event->column); c++) {
+      for (size_t r = MIN(event->data.line.initial_row, event->row); r <= MAX(event->data.line.initial_row, event->row); r++) {
         update_undiscovered_cell(map, r, c, Empty);
       }
     }

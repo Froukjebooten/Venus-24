@@ -1,4 +1,6 @@
 #include <gtest/gtest.h>
+#include <sys/param.h>
+
 extern "C" {
 #include "map.h"
 }
@@ -122,6 +124,28 @@ TEST_F(MapTest, DiscoveredLineHorizontal) {
 
   for (size_t c = start_col; c <= end_col; c++) {
     ExpectCellType(map, start_row, c, Empty);
+  }
+}
+
+TEST_F(MapTest, DiscoveredLineDescendingCoordinates) {
+    // draw a vertical line
+    size_t col = 5;
+    size_t start_row = 15;
+    size_t end_row = 10;
+    // (5, 15) -> (5, 10)
+    RobotEvent discovered_line_event = {.type = DiscoveredLine,
+                                      .row = end_row,
+                                      .column = col,
+                                      .data = {.line = {
+                                                   .initial_row = start_row,
+                                                   .initial_column = col,
+                                               }}};
+
+  // Handle the line discovery event
+  handle_robot_event(&map, &discovered_line_event);
+
+  for (size_t r = MIN(start_row, end_row); r <= MAX(start_row, end_row); r++) {
+    ExpectCellType(map, r, col, Empty);
   }
 }
 
