@@ -126,14 +126,32 @@ TEST_F(MapTest, DiscoveredLineHorizontal) {
     ExpectCellType(map, start_row, c, Empty);
   }
 }
+TEST_F(MapTest, DiscoveredLineDescendingCoordinatesHorizontal) {
+  // (5, 15) -> (10, 15)
+  size_t start_col = 5;
+  size_t end_col = 10;
+  size_t row = 15;
+  RobotEvent discovered_line_event = {.type = DiscoveredLine,
+                                      .row = row,
+                                      .column = end_col,
+                                      .data = {.line = {
+                                                   .initial_row = row,
+                                                   .initial_column = start_col,
+                                               }}};
+  // Handle the line discovery event
+  handle_robot_event(&map, &discovered_line_event);
 
-TEST_F(MapTest, DiscoveredLineDescendingCoordinates) {
-    // draw a vertical line
-    size_t col = 5;
-    size_t start_row = 15;
-    size_t end_row = 10;
-    // (5, 15) -> (5, 10)
-    RobotEvent discovered_line_event = {.type = DiscoveredLine,
+  for (size_t c = MIN(start_col, end_col); c <= MAX(start_col, end_col); c++) {
+    ExpectCellType(map, row, c, Empty);
+  }
+}
+
+TEST_F(MapTest, DiscoveredLineDescendingCoordinatesVertical) {
+  size_t col = 5;
+  size_t start_row = 15;
+  size_t end_row = 10;
+  // (5, 15) -> (5, 10)
+  RobotEvent discovered_line_event = {.type = DiscoveredLine,
                                       .row = end_row,
                                       .column = col,
                                       .data = {.line = {
