@@ -1,15 +1,25 @@
 #include <gtest/gtest.h>
+extern "C" {
+#include "map.h"
+}
 
 class MapTest : public ::testing::Test {
 protected:
+    Map map;
     void SetUp() override {
-        // TODO: Initialize map with default state
+        init_map(&map);
     }
 };
 
 // Test map initialization
 TEST_F(MapTest, Initialization) {
-    EXPECT_TRUE(true); // Placeholder
+    // Check if all cells are initialized to Undiscovered
+    for (size_t c = 0; c < MAX_COLS; c++) {
+        for (size_t r = 0; r < MAX_ROWS; r++) {
+            EXPECT_EQ(map.cells[c][r].type, Undiscovered) 
+                << "Cell at position (" << c << "," << r << ") should be Undiscovered";
+        }
+    }
     /* Useful test cases:
      * - Verify map dimensions are correct
      * - Check all cells are initialized to empty state
