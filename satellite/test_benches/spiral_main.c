@@ -1,7 +1,7 @@
-#include "blocks.h"
-#include "map.h"
-#include "map_visualizer.h"
-#include "robot_events.h"
+#include "../blocks.h"
+#include "../map.h"
+#include "../map_visualizer.h"
+#include "../robot_events.h"
 #include <stdio.h>
 #include <sys/time.h>
 #include <unistd.h>
@@ -54,7 +54,7 @@ void simulate_exploration(Map *map, int step) {
 }
 
 int main() {
-    printf("Satellite system starting...\n");
+    printf("Spiral Exploration Test Starting...\n");
 
     // Initialize components
     init_map(&satellite_map);
@@ -66,6 +66,8 @@ int main() {
     // Main satellite loop
     SDL_Event event;
     int quit = 0;
+    int exploration_step = 0;
+    Uint32 last_update = SDL_GetTicks();
     
     while (!quit) {
         // Handle SDL events
@@ -75,6 +77,14 @@ int main() {
             }
             // Handle visualizer events (panning)
             handle_visualizer_events(&visualizer, &event);
+        }
+
+        // Update map every second
+        Uint32 current_time = SDL_GetTicks();
+        if (current_time - last_update >= 1000) { // 1000ms = 1 second
+            simulate_exploration(&satellite_map, exploration_step++);
+            last_update = current_time;
+            printf("Exploration step: %d\n", exploration_step);
         }
 
         // Update visualization
@@ -87,4 +97,4 @@ int main() {
     // Cleanup
     cleanup_visualizer(&visualizer);
     return 0;
-}
+} 
