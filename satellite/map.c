@@ -43,6 +43,10 @@ void handle_robot_event(Map *map, RobotEvent *event) {
       update_undiscovered_cell(map, event->row, event->column, Block);
       break;
     }
+    case DiscoveredCliff: {
+      update_undiscovered_cell(map, event->row, event->column, Cliff);
+      break;
+    }
     default: {
       // TODO: handle other events
       break;

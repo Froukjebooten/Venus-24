@@ -15,6 +15,8 @@ const char *cell_type_string(CellType type) {
     return "Block";
   case Empty:
     return "Empty";
+  case Cliff:
+    return "Cliff";
   default:
     return "Unknown";
   }
@@ -209,6 +211,68 @@ TEST_F(MapTest, MapSerialization) {
                       * - Test partial map updates
                       * - Check data integrity after serialization
                       */
+}
+
+TEST_F(MapTest, DiscoveredCliff) {
+  // Test setting a cell to Cliff state
+  size_t test_col = 5;
+  size_t test_row = 7;
+
+  // Create a robot event for discovering a cliff
+  RobotEvent discovered_cliff_event = {
+      .type = DiscoveredCliff,
+      .row = test_row,
+      .column = test_col
+  };
+
+  // Handle the event
+  handle_robot_event(&map, &discovered_cliff_event);
+
+  // Verify the cell state was updated
+  ExpectCellType(map, test_row, test_col, Cliff);
+
+  // Verify other cells remain unchanged
+  for (size_t c = 0; c < MAX_COLS; c++) {
+    for (size_t r = 0; r < MAX_ROWS; r++) {
+      if (c == test_col && r == test_row) {
+        ExpectCellType(map, r, c, Cliff);
+      } else {
+        ExpectCellType(map, r, c, Undiscovered);
+      }
+    }
+  }
+}
+
+TEST_F(MapTest, MultipleCliffDetections) {
+  // Test multiple cliff detections in adjacent cells
+  size_t test_col = 5;
+  size_t test_row = 7;
+
+  // Create and handle first cliff event
+  RobotEvent cliff_event1 = {
+      .type = DiscoveredCliff,
+      .row = test_row,
+      .column = test_col
+  };
+  handle_robot_event(&map, &cliff_event1);
+
+  // Create and handle second cliff event
+  RobotEvent cliff_event2 = {
+      .type = DiscoveredCliff,
+      .row = test_row,
+      .column = test_col + 1
+  };
+  handle_robot_event(&map, &cliff_event2);
+
+  // Verify both cells are marked as cliffs
+  ExpectCellType(map, test_row, test_col, Cliff);
+  ExpectCellType(map, test_row, test_col + 1, Cliff);
+
+  // Verify surrounding cells remain unchanged
+  ExpectCellType(map, test_row - 1, test_col, Undiscovered);
+  ExpectCellType(map, test_row + 1, test_col, Undiscovered);
+  ExpectCellType(map, test_row, test_col - 1, Undiscovered);
+  ExpectCellType(map, test_row, test_col + 2, Undiscovered);
 }
 
 int main(int argc, char **argv) {

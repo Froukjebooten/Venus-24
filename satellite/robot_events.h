@@ -7,7 +7,8 @@
 
 typedef enum {
     DiscoveredLine  = 0,
-    DiscoveredBlock  = 1
+    DiscoveredBlock  = 1,
+    DiscoveredCliff = 2
 } EventType;
 
 typedef struct {
