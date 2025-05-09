@@ -5,8 +5,11 @@
 #include "blocks.h"
 #include "robot_events.h"
 
-#define MAX_ROWS (2048)
-#define MAX_COLS (2048)
+#define MAX_ROWS (100)
+#define MAX_COLS (100)
+#define CENTER_ROW (MAX_ROWS / 2)
+#define CENTER_COL (MAX_COLS / 2)
+
 typedef enum {
   Undiscovered = 0,
   Empty = 1,
