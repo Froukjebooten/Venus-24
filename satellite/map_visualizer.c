@@ -208,7 +208,23 @@ void update_visualization(MapVisualizer* visualizer, const Map* map) {
                     SDL_SetRenderDrawColor(visualizer->renderer, 200, 200, 200, 255);  // Light gray
                     break;
                 case Block:
-                    SDL_SetRenderDrawColor(visualizer->renderer, 100, 100, 100, 255);  // Medium gray
+                    // Set color based on block color
+                    switch (map->cells[r][c].data.block.color) {
+                        case Green:
+                            SDL_SetRenderDrawColor(visualizer->renderer, 0, 200, 0, 255);  // Green
+                            break;
+                        case Red:
+                            SDL_SetRenderDrawColor(visualizer->renderer, 200, 0, 0, 255);  // Red
+                            break;
+                        case Blue:
+                            SDL_SetRenderDrawColor(visualizer->renderer, 0, 0, 200, 255);  // Blue
+                            break;
+                        case Black:
+                            SDL_SetRenderDrawColor(visualizer->renderer, 50, 50, 50, 255);  // Black
+                            break;
+                        default:
+                            SDL_SetRenderDrawColor(visualizer->renderer, 100, 100, 100, 255);  // Default gray
+                    }
                     break;
                 default:
                     SDL_SetRenderDrawColor(visualizer->renderer, 255, 0, 0, 255);  // Red for unknown types

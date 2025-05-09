@@ -15,7 +15,7 @@ TEST_OBJS = $(addprefix Compiledir/,$(TEST_SRCS:.cpp=.o))
 TEST_TARGET = Compiledir/map_test
 
 # Test benches
-TEST_BENCH_SRCS = test_benches/spiral_main.c
+TEST_BENCH_SRCS = test_benches/spiral.c test_benches/blocks.c
 TEST_BENCH_OBJS = $(addprefix Compiledir/,$(TEST_BENCH_SRCS:.c=.o))
 TEST_BENCH_TARGETS = $(addprefix Compiledir/,$(TEST_BENCH_SRCS:.c=))
 
