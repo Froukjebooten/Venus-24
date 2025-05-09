@@ -66,7 +66,7 @@ void update_visualization(MapVisualizer* visualizer, const Map* map) {
             };
 
             // Set color based on cell type
-            switch (map->cells[c][r].type) {
+            switch (map->cells[r][c].type) {
                 case Undiscovered:
                     SDL_SetRenderDrawColor(visualizer->renderer, 50, 50, 50, 255);  // Dark gray
                     break;

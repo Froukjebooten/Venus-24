@@ -5,6 +5,9 @@ all: satellite robot
 satellite:
 	$(MAKE) -C satellite
 
+run-satellite: satellite
+	./satellite/Compiledir/satellite
+
 robot:
 	$(MAKE) -C robot
 
