@@ -32,8 +32,10 @@
           '')
         ];
         shellHook = ''
-          export TEST_CFLAGS="-I${pkgs.gtest.dev}/include"
-          export TEST_LDFLAGS="-L${pkgs.gtest}/lib"
+          export GTEST_CFLAGS="-I${pkgs.gtest.dev}/include"
+          export GTEST_LDFLAGS="-L${pkgs.gtest}/lib -lgtest -lgtest_main -pthread"
+          export SDL_CFLAGS="-I${pkgs.SDL2.dev}/include"
+          export SDL_LDFLAGS="-L${pkgs.SDL2}/lib -lSDL2"
         '';
       };
     };

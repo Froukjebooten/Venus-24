@@ -1,11 +1,12 @@
 CC = gcc
 CXX = g++
-CFLAGS = -Wall -Wextra -I.
-CXXFLAGS = -Wall -Wextra -I. -std=c++14
-TEST_CFLAGS += $(CFLAGS)
-TEST_LDFLAGS += -lgtest -lgtest_main -pthread
+CFLAGS += -Wall -Wextra -I. $(SDL_CFLAGS)
+CXXFLAGS += -std=c++14 $(CFLAGS)
+TEST_CFLAGS += $(CFLAGS) $(GTEST_CFLAGS)
+LDFLAGS += $(SDL_LDFLAGS)
+TEST_LDFLAGS += $(GTEST_LDFLAGS) $(LDFLAGS)
 
-SRCS = main.c map.c robot_events.c
+SRCS = main.c map.c robot_events.c map_visualizer.c
 OBJS = $(addprefix Compiledir/,$(SRCS:.c=.o))
 TARGET = Compiledir/satellite
 
@@ -24,10 +25,13 @@ Compiledir:
 	mkdir -p Compiledir Compiledir/tests
 
 $(TARGET): $(OBJS)
-	$(CC) -o $@ $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 
 $(TEST_TARGET): $(TEST_OBJS) $(filter-out Compiledir/main.o, $(OBJS))
 	$(CXX) $(TEST_LDFLAGS) -o $@ $^
+
+Compiledir/tests/%.o: tests/%.cpp
+	$(CXX) $(TEST_CFLAGS) -c $< -o $@
 
 Compiledir/%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@

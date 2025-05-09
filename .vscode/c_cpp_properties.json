@@ -4,14 +4,14 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/nix/store/975v6308g3l65p29hlph55q7w13hlzhl-gtest-1.15.2-dev/include"
+                "/nix/store/975v6308g3l65p29hlph55q7w13hlzhl-gtest-1.15.2-dev/include",
+                "/nix/store/1ccv7ssxdx7l519h0j4kpb7y9mzdn079-SDL2-2.30.6-dev/include"
             ],
-            "defines": [],
             "compilerPath": "/run/current-system/sw/bin/gcc",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
             "intelliSenseMode": "linux-gcc-x64",
-            "configurationProvider": "ms-vscode.makefile-tools"
+            "configurationProvider": "ms-vscode.cpptools"
         }
     ],
     "version": 4

@@ -1,9 +1,9 @@
 CC = gcc
 CXX = g++
-CFLAGS = -Wall -Wextra -I.
-CXXFLAGS = -Wall -Wextra -I. -std=c++14
-TEST_CFLAGS += $(CFLAGS)
-TEST_LDFLAGS += -lgtest -lgtest_main -pthread
+CFLAGS += -Wall -Wextra -I.
+CXXFLAGS += -std=c++14 $(CFLAGS)
+TEST_CFLAGS += $(CFLAGS) $(GTEST_CFLAGS)
+TEST_LDFLAGS += $(GTEST_LDFLAGS) $(LDFLAGS)
 
 SRCS = main.c
 OBJS = $(addprefix Compiledir/,$(SRCS:.c=.o))
@@ -24,10 +24,13 @@ Compiledir:
 	mkdir -p Compiledir Compiledir/tests
 
 $(TARGET): $(OBJS)
-	$(CC) -o $@ $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 
 $(TEST_TARGET): $(TEST_OBJS)
 	$(CXX) $(TEST_LDFLAGS) -o $@ $^
+
+Compiledir/tests/%.o: tests/%.cpp
+	$(CXX) $(TEST_CFLAGS) -c $< -o $@
 
 Compiledir/%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
